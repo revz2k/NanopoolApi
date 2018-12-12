@@ -4,15 +4,15 @@ namespace NanopoolApi.Data
 {
 	public class CalculatorEarnings : Data
 	{
-		private float _coins { get; set; }
-		private float _dollars { get; set; }
-		private float _yuan { get; set; }
-		private float _euros { get; set; }
-		private float _rubles { get; set; }
-		private float _bitcoins { get; set; }
+		private double _coins { get; set; }
+		private double _dollars { get; set; }
+		private double _yuan { get; set; }
+		private double _euros { get; set; }
+		private double _rubles { get; set; }
+		private double _bitcoins { get; set; }
 
 		[JsonProperty("coins")]
-		public float Coins
+		public double Coins
 		{
 			get
 			{
@@ -29,7 +29,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("dollars")]
-		public float Dollars
+		public double Dollars
 		{
 			get
 			{
@@ -46,7 +46,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("yuan")]
-		public float Yuan
+		public double Yuan
 		{
 			get
 			{
@@ -63,7 +63,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("euros")]
-		public float Euros
+		public double Euros
 		{
 			get
 			{
@@ -80,7 +80,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("rubles")]
-		public float Rubles
+		public double Rubles
 		{
 			get
 			{
@@ -97,7 +97,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("bitcoins")]
-		public float Bitcoins
+		public double Bitcoins
 		{
 			get
 			{

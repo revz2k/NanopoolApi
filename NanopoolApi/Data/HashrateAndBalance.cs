@@ -5,7 +5,7 @@ namespace NanopoolApi.Data
 	public class HashrateAndBalance : Data
 	{
 		private int _hashrate { get; set; }
-		private float _balance { get; set; }
+		private double _balance { get; set; }
 
 		[JsonProperty("hashrate")]
 		public int Hashrate
@@ -25,7 +25,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("balance")]
-		public float Balance
+		public double Balance
 		{
 			get
 			{

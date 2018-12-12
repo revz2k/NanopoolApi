@@ -5,8 +5,8 @@ namespace NanopoolApi.Data
 	public class BlocksStats : Data
 	{
 		private int _date { get; set; }
-		private float _difficulty { get; set; }
-		private float _blockTime { get; set; }
+		private double _difficulty { get; set; }
+		private double _blockTime { get; set; }
 
 		[JsonProperty("date")]
 		public int Date {
@@ -25,7 +25,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("difficulty")]
-		public float Difficulty {
+		public double Difficulty {
 			get
 			{
 				return _difficulty;
@@ -41,7 +41,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("block_time")]
-		public float BlockTime {
+		public double BlockTime {
 			get
 			{
 				return _blockTime;

@@ -2,12 +2,12 @@ using Newtonsoft.Json;
 
 namespace NanopoolApi.Response
 {
-	public class FloatValue : Response
+	public class DoubleValue : Response
 	{
-		private float _data { get; set; }
+		private double _data { get; set; }
 
 		[JsonProperty("data")]
-		public float Data
+		public double Data
 		{
 			get
 			{

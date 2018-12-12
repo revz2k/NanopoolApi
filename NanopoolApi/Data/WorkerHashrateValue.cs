@@ -5,7 +5,7 @@ namespace NanopoolApi.Data
 	public class WorkerHashrateValue : Data
 	{
 		private string _worker { get; set; }
-		private float _hashrate { get; set; }
+		private double _hashrate { get; set; }
 
 		[JsonProperty("worker")]
 		public string Worker
@@ -25,7 +25,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("hashrate")]
-		public float Hashrate
+		public double Hashrate
 		{
 			get
 			{

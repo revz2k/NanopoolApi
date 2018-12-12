@@ -53,14 +53,14 @@ namespace NanopoolApi
 			Proxy = proxy;
 		}
 
-		public FloatValue GetAccountBalance(string account)
+		public DoubleValue GetAccountBalance(string account)
 		{
 			var error = string.Empty;
-			var result = LoadResponse<FloatValue>(string.Format(Statics.AccountBalance, account), ref error);
+			var result = LoadResponse<DoubleValue>(string.Format(Statics.AccountBalance, account), ref error);
 
 			if (!string.IsNullOrWhiteSpace(error) && result == null)
 			{
-				result = CastToChild<FloatValue>(GetErrorResponse(error));
+				result = CastToChild<DoubleValue>(GetErrorResponse(error));
 			}
 
 			return result;
@@ -79,14 +79,14 @@ namespace NanopoolApi
 			return result;
 		}
 
-		public FloatValue GetAverageHashrateLimited(string account, int hours, string worker = null)
+		public DoubleValue GetAverageHashrateLimited(string account, int hours, string worker = null)
 		{
 			var error = string.Empty;
-			var result = LoadResponse<FloatValue>(string.Format(Statics.AverageHashrateLimited, account, worker.UrlPart(), hours), ref error);
+			var result = LoadResponse<DoubleValue>(string.Format(Statics.AverageHashrateLimited, account, worker.UrlPart(), hours), ref error);
 
 			if (!string.IsNullOrWhiteSpace(error) && result == null)
 			{
-				result = CastToChild<FloatValue>(GetErrorResponse(error));
+				result = CastToChild<DoubleValue>(GetErrorResponse(error));
 			}
 
 			return result;
@@ -118,14 +118,14 @@ namespace NanopoolApi
 			return result;
 		}
 
-		public FloatValue GetCurrentHashrate(string account, string worker = null)
+		public DoubleValue GetCurrentHashrate(string account, string worker = null)
 		{
 			var error = string.Empty;
-			var result = LoadResponse<FloatValue>(string.Format(Statics.CurrentHashrate, account, worker.UrlPart()), ref error);
+			var result = LoadResponse<DoubleValue>(string.Format(Statics.CurrentHashrate, account, worker.UrlPart()), ref error);
 
 			if (!string.IsNullOrWhiteSpace(error) && result == null)
 			{
-				result = CastToChild<FloatValue>(GetErrorResponse(error));
+				result = CastToChild<DoubleValue>(GetErrorResponse(error));
 			}
 
 			return result;
@@ -261,14 +261,14 @@ namespace NanopoolApi
 			return result;
 		}
 
-		public FloatValue GetAverageBlockTime()
+		public DoubleValue GetAverageBlockTime()
 		{
 			var error = string.Empty;
-			var result = LoadResponse<FloatValue>(Statics.AverageBlockTime, ref error);
+			var result = LoadResponse<DoubleValue>(Statics.AverageBlockTime, ref error);
 
 			if (!string.IsNullOrWhiteSpace(error) && result == null)
 			{
-				result = CastToChild<FloatValue>(GetErrorResponse(error));
+				result = CastToChild<DoubleValue>(GetErrorResponse(error));
 			}
 
 			return result;

@@ -6,7 +6,7 @@ namespace NanopoolApi.Data
 	{
 		private int _date { get; set; }
 		private string _txHash { get; set; }
-		private float _amount { get; set; }
+		private double _amount { get; set; }
 		private bool _confirmed { get; set; }
 
 		[JsonProperty("date")]
@@ -44,7 +44,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("amount")]
-		public float Amount
+		public double Amount
 		{
 			get
 			{

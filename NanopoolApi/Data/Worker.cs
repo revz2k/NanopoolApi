@@ -4,11 +4,11 @@ namespace NanopoolApi.Data
 {
 	public class Worker : Data
 	{
-		private float _h1 { get; set; }
-		private float _h3 { get; set; }
-		private float _h6 { get; set; }
-		private float _h12 { get; set; }
-		private float _h24 { get; set; }
+		private double _h1 { get; set; }
+		private double _h3 { get; set; }
+		private double _h6 { get; set; }
+		private double _h12 { get; set; }
+		private double _h24 { get; set; }
 		private string _id { get; set; }
 		private int _uid { get; set; }
 		private string _hashrate { get; set; }
@@ -16,7 +16,7 @@ namespace NanopoolApi.Data
 		private int _rating { get; set; }
 
 		[JsonProperty("h1")]
-		public float H1
+		public double H1
 		{
 			get
 			{
@@ -33,7 +33,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("h3")]
-		public float H3
+		public double H3
 		{
 			get
 			{
@@ -50,7 +50,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("h6")]
-		public float H6
+		public double H6
 		{
 			get
 			{
@@ -67,7 +67,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("h12")]
-		public float H12
+		public double H12
 		{
 			get
 			{
@@ -84,7 +84,7 @@ namespace NanopoolApi.Data
 		}
 
 		[JsonProperty("h24")]
-		public float H24
+		public double H24
 		{
 			get
 			{
